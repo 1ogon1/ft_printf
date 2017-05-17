@@ -6,7 +6,7 @@
 /*   By: rkonoval <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/13 16:53:07 by rkonoval          #+#    #+#             */
-/*   Updated: 2017/05/15 10:32:47 by rkonoval         ###   ########.fr       */
+/*   Updated: 2017/05/17 16:04:38 by rkonoval         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,22 +28,4 @@ char	*ft_upcase(t_env *e, void *data, int base)
 		return (ft_itoa_uintmax_t((uintmax_t)data, base));
 	else
 		return (ft_itoa_base_un((unsigned int)data, base));
-}
-
-void	set_space(t_env *e, char *s, int i)
-{
-	if (e->precision > ft_strlen(s))
-	{
-		ft_write_pres(e->precision - ft_strlen(s));
-		if (e->width <= e->precision)
-			g_len += e->precision - ft_strlen(s);
-	}
-	ft_putstr(s);
-	if ((e->plus == 1 || e->space == 1) && s[0] != '-')
-	{
-		ft_putchar(e->q);
-		g_len++;
-	}
-	if (e->width > 0)
-		ft_write_char(i, ' ');
 }

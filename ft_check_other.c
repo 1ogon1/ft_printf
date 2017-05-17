@@ -6,13 +6,13 @@
 /*   By: rkonoval <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/13 16:50:30 by rkonoval          #+#    #+#             */
-/*   Updated: 2017/05/15 10:10:23 by rkonoval         ###   ########.fr       */
+/*   Updated: 2017/05/17 16:03:30 by rkonoval         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_check_pres(t_env *e, char **format)
+void		ft_check_pres(t_env *e, char **format)
 {
 	e->precision = 0;
 	(*format)++;
@@ -23,46 +23,59 @@ void	ft_check_pres(t_env *e, char **format)
 			(*format)++;
 	}
 	else
-	{
-		if ((**format >= 'a' && **format <= 'z') ||
-				(**format >= 'A' && **format <= 'Z'))
-			e->precision = -1;
-		if (**format == '0')
-			e->precision = -1;
-	}
+		e->precision = -1;
 }
 
-void	ft_check_mod(t_env *e, char **format)
+static void	ft_check_modp2(t_env *e, char **format)
 {
-	if (**format == 'h')
-		e->mod = "h";
-	else if (**format == 'l')
-		e->mod = "l";
-	else if (**format == 'j')
-		e->mod = "j";
-	else if (**format == 'z')
-		e->mod = "z";
-	(*format)++;
-	if (**format == 'h')
+	if (**format == 'h' && e->priority == 2)
 	{
 		e->mod = "hh";
+		e->priority = 1;
 		(*format)++;
 	}
-	else if (**format == 'l')
+	else if (**format == 'l' && e->priority == 3)
 	{
 		e->mod = "ll";
+		e->priority = 5;
 		(*format)++;
 	}
 }
 
-void	ft_check_width(t_env *e, char **format)
+void		ft_check_mod(t_env *e, char **format)
+{
+	if (**format == 'h' && e->priority < 2)
+	{
+		e->mod = "h";
+		e->priority = 2;
+	}
+	else if (**format == 'l' && e->priority < 3)
+	{
+		e->mod = "l";
+		e->priority = 3;
+	}
+	else if (**format == 'j' && e->priority < 4)
+	{
+		e->mod = "j";
+		e->priority = 4;
+	}
+	else if (**format == 'z' && e->priority < 6)
+	{
+		e->mod = "z";
+		e->priority = 6;
+	}
+	(*format)++;
+	ft_check_modp2(e, format);
+}
+
+void		ft_check_width(t_env *e, char **format)
 {
 	e->width = ft_atoi(*format);
 	while (**format >= '0' && **format <= '9')
 		(*format)++;
 }
 
-void	ft_check_flag(t_env *e, char **format)
+void		ft_check_flag(t_env *e, char **format)
 {
 	if (**format == '-')
 		e->min = 1;

@@ -122,8 +122,11 @@ void	print_id(t_env *e, void *data, int r)
 		g_len += e->width;
 		return ;
 	}
-	else if (e->precision == -1 && ft_strcmp(s, "0") != 0)
+	if (e->precision < 0)
+	{
+		e->zero = 0;
 		e->precision = 0;
+	}
 	if (e->precision > 0)
 		e->zero = 0;
 	ft_plus_space(e, s);

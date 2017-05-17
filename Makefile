@@ -29,6 +29,7 @@ SRC = ft_check.c\
 	  print_u.c\
 	  print_un.c\
 	  print_x.c\
+	  ft_notype.c\
 	  ft_itoa/ft_itoa_base.c\
 	  ft_itoa/ft_itoa_base_low.c\
 	  ft_itoa/ft_itoa_base_un.c\

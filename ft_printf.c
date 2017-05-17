@@ -6,32 +6,37 @@
 /*   By: rkonoval <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/13 16:50:47 by rkonoval          #+#    #+#             */
-/*   Updated: 2017/05/15 10:37:09 by rkonoval         ###   ########.fr       */
+/*   Updated: 2017/05/17 16:03:08 by rkonoval         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void	print(t_env *e, void *data)
+static void	print(t_env *e, void *data, char **format)
 {
-	if (e->type == 's')
-		print_s(e, data);
-	else if (e->type == 'c' || e->type == 'C')
-		print_c(e, data);
-	else if (e->type == 'S')
-		print_ss(data);
-	else if (e->type == 'p')
-		print_p(e, data, 0);
-	else if (e->type == 'd' || e->type == 'i' || e->type == 'D')
-		print_id(e, data, 0);
-	else if (e->type == 'o' || e->type == 'O')
-		print_o(e, data, 0);
-	else if (e->type == 'u' || e->type == 'U')
-		print_u(e, data, 0);
-	else if (e->type == 'x' || e->type == 'X')
-		print_x(e, data, 0);
-	else if (e->type == '%')
-		print_percent(e, '%');
+	if (e->type)
+	{
+		if (e->type == 's')
+			print_s(e, data);
+		else if (e->type == 'c' || e->type == 'C')
+			print_c(e, data);
+		else if (e->type == 'S')
+			print_ss(data);
+		else if (e->type == 'p')
+			print_p(e, data, 0);
+		else if (e->type == 'd' || e->type == 'i' || e->type == 'D')
+			print_id(e, data, 0);
+		else if (e->type == 'o' || e->type == 'O')
+			print_o(e, data, 0);
+		else if (e->type == 'u' || e->type == 'U')
+			print_u(e, data, 0);
+		else if (e->type == 'x' || e->type == 'X')
+			print_x(e, data, 0);
+		else if (e->type == '%')
+			print_percent(e, '%');
+	}
+	else
+		ft_notype(e, format);
 }
 
 int			ft_printf(char *format, ...)
@@ -48,10 +53,13 @@ int			ft_printf(char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			ft_check(&format, &e);
-			if (e.type != '%')
-				data = va_arg(ap, void *);
-			print(&e, data);
+			if (*format)
+			{
+				ft_check(&format, &e);
+				if (e.type != '%' && e.type)
+					data = va_arg(ap, void *);
+				print(&e, data, &format);
+			}
 		}
 		else
 			format_print(&format);

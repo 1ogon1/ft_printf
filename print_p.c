@@ -6,7 +6,7 @@
 /*   By: rkonoval <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/13 16:52:28 by rkonoval          #+#    #+#             */
-/*   Updated: 2017/05/15 13:32:07 by rkonoval         ###   ########.fr       */
+/*   Updated: 2017/05/17 16:03:52 by rkonoval         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ static void	ft_set_p(t_env *e, char *s, int i, char c)
 		ft_no_min_p(e, s, i, c);
 }
 
-static void	printp2_p(t_env *e, char *s, int r,char c)
+static void	printp2_p(t_env *e, char *s, int r, char c)
 {
 	int i;
 	int len;

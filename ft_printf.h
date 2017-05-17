@@ -6,7 +6,7 @@
 /*   By: rkonoval <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/13 16:50:58 by rkonoval          #+#    #+#             */
-/*   Updated: 2017/05/15 13:44:04 by rkonoval         ###   ########.fr       */
+/*   Updated: 2017/05/17 16:05:55 by rkonoval         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ typedef struct	s_env
 	int			plus;
 	int			width;
 	int			space;
+	int			priority;
 	int			precision;
 	char		q;
 	char		*mod;
@@ -58,6 +59,7 @@ void			print_s(t_env *e, void *data);
 void			print_c(t_env *e, void *data);
 void			print_sp2(t_env *e, char *s);
 void			print_ss(void *data);
+void			ft_notype(t_env *e, char **format);
 /*
 **				OUTPUT HELPS
 */
@@ -67,7 +69,6 @@ char			*ft_mod(t_env *e, void *data, int base);
 void			ft_set_print(t_env *e, char *s, int i, char c);
 void			ft_precision(t_env *e, char *s, int i, char c);
 void			ft_minset(t_env *e, char *s, int i, char c);
-void			set_space(t_env *e, char *s, int i);
 void			ft_setp2(t_env *e, char *s, int i, char c);
 void			ft_set(t_env *e, char *s, int i, char c);
 void			ft_three(t_env *e, char *s, char c);

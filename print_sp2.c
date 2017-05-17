@@ -6,7 +6,7 @@
 /*   By: rkonoval <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/15 10:29:15 by rkonoval          #+#    #+#             */
-/*   Updated: 2017/05/15 14:28:25 by rkonoval         ###   ########.fr       */
+/*   Updated: 2017/05/17 16:04:07 by rkonoval         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,7 +112,7 @@ void		print_sp2(t_env *e, char *s)
 		if (ft_strlen(s) == 0)
 		{
 			ft_write_char(e->width, c);
-			g_len+= e->width;
+			g_len += e->width;
 		}
 		else
 			ft_print(e, c, s);
