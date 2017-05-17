@@ -30,7 +30,7 @@ static char	set_char_lg_un(unsigned long long int i)
 	char	c;
 
 	c = 'Z';
-	if (i >= 0 && i <= 9)
+	if (i <= 9)
 		c = i + '0';
 	else if (i == 10)
 		c = 'A';

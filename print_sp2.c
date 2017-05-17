@@ -6,7 +6,7 @@
 /*   By: rkonoval <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/15 10:29:15 by rkonoval          #+#    #+#             */
-/*   Updated: 2017/05/15 10:29:37 by rkonoval         ###   ########.fr       */
+/*   Updated: 2017/05/15 14:28:25 by rkonoval         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,12 +96,27 @@ void		ft_three(t_env *e, char *s, char c)
 void		print_sp2(t_env *e, char *s)
 {
 	char	c;
+	int		flag;
 
+	flag = 0;
 	if (!s)
+	{
 		s = ft_strdup("(null)");
+		flag = 1;
+	}
 	c = e->zero ? '0' : ' ';
 	if (!s)
 		ft_print(e, c, "(null)");
 	else
-		ft_print(e, c, s);
+	{
+		if (ft_strlen(s) == 0)
+		{
+			ft_write_char(e->width, c);
+			g_len+= e->width;
+		}
+		else
+			ft_print(e, c, s);
+	}
+	if (flag)
+		free(s);
 }

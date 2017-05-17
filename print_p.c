@@ -32,18 +32,18 @@ static void	ft_null_p(t_env *e)
 	}
 }
 
-static void	ft_no_min_p(t_env *e, char *s, int i)
+static void	ft_no_min_p(t_env *e, char *s, int i, char c)
 {
 	if (e->zero)
 	{
 		ft_putstr("0x");
 		if (e->width > 0)
-			ft_write_char(i, ' ');
+			ft_write_char(i, c);
 	}
 	if (!e->zero)
 	{
 		if (e->width > 0)
-			ft_write_char(i, ' ');
+			ft_write_char(i, c);
 		ft_putstr("0x");
 	}
 	if (e->precision > ft_strlen(s))
@@ -55,7 +55,7 @@ static void	ft_no_min_p(t_env *e, char *s, int i)
 	ft_putstr(s);
 }
 
-static void	ft_set_p(t_env *e, char *s, int i)
+static void	ft_set_p(t_env *e, char *s, int i, char c)
 {
 	if (e->min)
 	{
@@ -68,13 +68,13 @@ static void	ft_set_p(t_env *e, char *s, int i)
 		}
 		ft_putstr(s);
 		if (e->width > 0)
-			ft_write_char(i, ' ');
+			ft_write_char(i, c);
 	}
 	else
-		ft_no_min_p(e, s, i);
+		ft_no_min_p(e, s, i, c);
 }
 
-static void	printp2_p(t_env *e, char *s, int r)
+static void	printp2_p(t_env *e, char *s, int r,char c)
 {
 	int i;
 	int len;
@@ -87,12 +87,13 @@ static void	printp2_p(t_env *e, char *s, int r)
 		i = e->width - (len + r + 2);
 		g_len += i + r;
 	}
-	ft_set_p(e, s, i);
+	ft_set_p(e, s, i, c);
 }
 
 void		print_p(t_env *e, void *data, int r)
 {
 	char	*s;
+	char	c;
 
 	s = ft_itoa_long_lg_low((unsigned long long int)data, 16);
 	g_len += 2;
@@ -103,10 +104,11 @@ void		print_p(t_env *e, void *data, int r)
 	}
 	else if (e->precision == -1 && ft_strcmp(s, "0") != 0)
 		e->precision = 0;
-	if (e->precision > 0)
+	if (e->precision > 0 || e->min)
 		e->zero = 0;
 	if (e->precision >= ft_strlen(s))
 		r = e->precision - ft_strlen(s);
-	printp2_p(e, s, r);
+	c = e->zero ? '0' : ' ';
+	printp2_p(e, s, r, c);
 	free(s);
 }

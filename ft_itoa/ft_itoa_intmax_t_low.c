@@ -12,16 +12,11 @@
 
 #include "ft_itoa.h"
 
-static int	f_len_size_t_low(intmax_t nbr)
+static int	f_len_size_t_low(uintmax_t nbr)
 {
 	int		size;
 
 	size = 1;
-	if (nbr < 0)
-	{
-		nbr = -nbr;
-		size++;
-	}
 	while (nbr > 9)
 	{
 		nbr = nbr / 10;
@@ -30,14 +25,12 @@ static int	f_len_size_t_low(intmax_t nbr)
 	return (size);
 }
 
-static char	set_char_size_t_low(intmax_t i)
+static char	set_char_size_t_low(uintmax_t i)
 {
 	char	c;
 
 	c = 'a';
-	if (i < 0)
-		i = -i;
-	if (i >= 0 && i <= 9)
+	if (i <= 9)
 		c = i + '0';
 	else if (i == 10)
 		c = 'a';
@@ -54,14 +47,14 @@ static char	set_char_size_t_low(intmax_t i)
 	return (c);
 }
 
-static void	fff_low(intmax_t value, long int base, char *s, int *i)
+static void	fff_low(uintmax_t value, long int base, char *s, int *i)
 {
-	if (value <= -base || value >= base)
+	if (value >= base)
 		fff_low(value / base, base, s, i);
 	s[(*i)++] = set_char_size_t_low(value % base);
 }
 
-char		*ft_itoa_intmax_t_low(intmax_t value, int base)
+char		*ft_itoa_uintmax_t_low(uintmax_t value, int base)
 {
 	char	*s;
 	int		i;
@@ -71,8 +64,6 @@ char		*ft_itoa_intmax_t_low(intmax_t value, int base)
 	len = f_len_size_t_low(value) + 1;
 	if (base < 2 || base > 16 || !(s = (char*)malloc(sizeof(char) * len)))
 		return (0);
-	if (base == 10 && value < 0)
-		s[i++] = '-';
 	fff_low(value, base, s, &i);
 	s[i] = '\0';
 	return (s);

@@ -76,16 +76,19 @@ void			ft_one(t_env *e, char *s, char c);
 void			ft_two(t_env *e, char *s, char c);
 void			ft_plus_space(t_env *e, char *s);
 void			ft_write_char(int i, char c);
-//void			print(t_env *e, void *data);
 void			format_print(char **format);
 void			ft_write(char *s, int i);
 void			ft_write_pres(int i);
-
+/*
+**				LIBFT FUNCTION
+*/
 int				ft_strlen(const char *str);
+int				ft_atoi(const char *str);
+
+char			*ft_strdup(const char *s1);
+
 void			ft_bzero(void *s, size_t n);
 void			*ft_memalloc(size_t size);
-void			ft_putchar(char c);
 void			ft_putstr(char const *s);
-char			*ft_strdup(const char *s1);
-int				ft_atoi(const char *str);
+void			ft_putchar(char c);
 #endif

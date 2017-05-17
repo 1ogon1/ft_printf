@@ -22,7 +22,7 @@ char	*ft_itoa_long_un(unsigned long int value, int base);
 char	*ft_itoa_short_low(unsigned short int nb, int base);
 char	*ft_itoa_short_un(unsigned short int nb, int base);
 char	*ft_itoa_long_lg(long long int value, int base);
-char	*ft_itoa_intmax_t_low(intmax_t value, int base);
+char	*ft_itoa_uintmax_t_low(uintmax_t value, int base);
 char	*ft_itoa_uintmax_t(uintmax_t value, int base);
 char	*ft_itoa_base_low(unsigned int nb, int base);
 char	*ft_itoa_intmax_t(intmax_t value, int base);

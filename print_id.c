@@ -46,7 +46,7 @@ char	*ft_mod(t_env *e, void *data, int base)
 	else if (ft_strcmp(e->mod, "h") == 0)
 		return (ft_itoa_short((short int)data, base));
 	else if (ft_strcmp(e->mod, "hh") == 0)
-		return (ft_itoa_base((int)data, base));
+		return (ft_itoa_base((char)data, base));
 	else if (ft_strcmp(e->mod, "j") == 0)
 		return (ft_itoa_intmax_t((intmax_t)data, base));
 	else if (ft_strcmp(e->mod, "z") == 0 && e->type == 'd')

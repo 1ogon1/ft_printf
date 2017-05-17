@@ -23,7 +23,7 @@ static char	*ft_lowcase(t_env *e, void *data, int base)
 	else if (ft_strcmp(e->mod, "hh") == 0)
 		return (ft_itoa_base_low((unsigned char)data, base));
 	else if (ft_strcmp(e->mod, "j") == 0)
-		return (ft_itoa_intmax_t_low((uintmax_t)data, base));
+		return (ft_itoa_uintmax_t_low((uintmax_t)data, base));
 	else if (ft_strcmp(e->mod, "z") == 0)
 		return (ft_itoa_size_t_low((uintmax_t)data, base));
 	else

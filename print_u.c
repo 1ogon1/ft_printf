@@ -14,28 +14,9 @@
 
 static void	ft_precisionnn(t_env *e, char *s, int i, char c)
 {
-	if ((e->plus == 1 || e->space == 1) && s[0] != '-')
-	{
-		if (e->zero == 1)
-		{
-			if (e->width > 0)
-				ft_write_char(i, c);
-			g_len++;
-			ft_putchar(e->q);
-		}
-		else
-		{
-			if (e->width > 0)
-				ft_write_char(i, c);
-			ft_putchar(e->q);
-		}
-	}
-	else
-	{
-		if (e->width > 0)
-			ft_write_char(i, c);
-		ft_putchar(e->q);
-	}
+	if (e->width > 0)
+		ft_write_char(i, c);
+	ft_putchar(e->q);
 }
 
 static void	ft_setp2_u(t_env *e, char *s, int i, char c)
@@ -46,8 +27,6 @@ static void	ft_setp2_u(t_env *e, char *s, int i, char c)
 	{
 		if (e->width > 0)
 			ft_write_char(i, c);
-		if ((e->plus == 1 || e->space == 1) && s[0] != '-')
-			ft_putchar(e->q);
 	}
 	if (e->precision > ft_strlen(s))
 	{
@@ -64,8 +43,6 @@ static void	ft_set_u(t_env *e, char *s, int i, char c)
 	{
 		if (e->q == '0' || !e->q)
 		{
-			if ((e->plus == 1 || e->space == 1) && s[0] != '-')
-				ft_putchar(e->q);
 			if (e->precision > ft_strlen(s))
 			{
 				ft_write_pres(e->precision - ft_strlen(s));
@@ -92,7 +69,6 @@ static void	ft_print_up2(t_env *e, char *s, int r, char c)
 	len = ft_strlen(s);
 	g_len += ft_strlen(s);
 	c = e->zero ? '0' : ' ';
-	ft_plus_space(e, s);
 	if (e->width > (len + r))
 	{
 		i = e->width - (len + r);
@@ -128,7 +104,7 @@ void		print_u(t_env *e, void *data, int r)
 	}
 	else if (e->precision == -1 && ft_strcmp(s, "0") != 0)
 		e->precision = 0;
-	if (e->precision > 0)
+	if (e->precision > 0 || e->min)
 		e->zero = 0;
 	if (e->precision > ft_strlen(s))
 		r = e->precision - ft_strlen(s);

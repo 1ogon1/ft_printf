@@ -30,7 +30,7 @@ static char	set_char_low(unsigned long int i)
 	char	c;
 
 	c = 'z';
-	if (i >= 0 && i <= 9)
+	if (i <= 9)
 		c = i + '0';
 	else if (i == 10)
 		c = 'a';
