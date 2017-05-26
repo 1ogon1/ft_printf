@@ -13,6 +13,7 @@
 #ifndef FT_ITOA_H
 # define FT_ITOA_H
 # include <stdlib.h>
+# include <inttypes.h>
 
 char	*ft_itoa_long_lg_low(unsigned long long int value, int base);
 char	*ft_itoa_long_lg_un(unsigned long long int value, int base);

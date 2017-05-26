@@ -53,6 +53,6 @@ void		print_c(t_env *e, void *data)
 	if (e->precision == -1)
 		e->precision = 0;
 	if (!s)
-		s = 0;
+		s = '\0';
 	ft_print_c(e, s, c);
 }
