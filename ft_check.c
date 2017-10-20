@@ -23,6 +23,7 @@ static void	ft_null(t_env *e)
 	e->type = 0;
 	e->space = 0;
 	e->width = 0;
+	//e->color = 0;
 	e->priority = 0;
 	e->precision = 0;
 }
@@ -45,7 +46,9 @@ static void	ft_sec_check(t_env *e, char **format)
 
 static void	ft_check_type(t_env *e, char **format)
 {
-	if (**format == 'o')
+	if (**format == '{')
+		ft_check_color(e, format);
+	else if (**format == 'o')
 		e->type = 'o';
 	else if (**format == 'O')
 		e->type = 'O';

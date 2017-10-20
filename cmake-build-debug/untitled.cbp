@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="untitled"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="untitled">
+				<Option output="/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/untitled" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="untitled/fast">
+				<Option output="/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/untitled" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_check.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_check_color.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_check_other.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_base.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_base_low.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_base_un.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_intmax_t.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_intmax_t_low.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_long.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_long_lg.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_long_lg_low.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_long_lg_un.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_long_low.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_long_un.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_short.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_short_low.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_short_un.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_size_t.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_size_t_low.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa_uintmax_t.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_notype.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_printf.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_printf.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/ft_write_char.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_atoi.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_bzero.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_memalloc.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_putchar.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_putstr.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_strcat.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_strcmp.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_strcpy.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_strdup.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_strjoin.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_strlen.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/main.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_c.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_id.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_idp2.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_mid.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_o.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_p.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_percent.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_s.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_sp2.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_ss.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_u.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_un.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_x.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

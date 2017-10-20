@@ -21,7 +21,7 @@ static void	print(t_env *e, void *data, char **format)
 		else if (e->type == 'c' || e->type == 'C')
 			print_c(e, data);
 		else if (e->type == 'S')
-			print_ss(data);
+			print_ss(e, data);
 		else if (e->type == 'p')
 			print_p(e, data, 0);
 		else if (e->type == 'd' || e->type == 'i' || e->type == 'D')
@@ -62,7 +62,7 @@ int			ft_printf(char *format, ...)
 			}
 		}
 		else
-			format_print(&format);
+			format_print(&e, &format);
 	}
 	va_end(ap);
 	return (g_len);

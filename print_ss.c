@@ -51,7 +51,7 @@ static int	check_len(wint_t *ws)
 	return (len);
 }
 
-static void	print_ssp2(wint_t *ws, int i, int j)
+static void	print_ssp2(t_env *e, wint_t *ws, int i, int j)
 {
 	char *s;
 
@@ -72,22 +72,22 @@ static void	print_ssp2(wint_t *ws, int i, int j)
 		i++;
 	}
 	s[j] = '\0';
-	ft_putstr(s);
+	/*ft_putstr(s);*/ft_print_color(e, s);
 	if (s)
 		free(s);
 }
 
-void		print_ss(void *data)
+void		print_ss(t_env *e, void *data)
 {
 	wint_t *ws;
 
 	ws = (wint_t *)data;
 	if (!ws)
 	{
-		ft_putstr("(null)");
+		/*ft_putstr("(null)");*/ft_print_color(e, "(null)");
 		g_len += 6;
 		return ;
 	}
 	g_len += check_len(ws);
-	print_ssp2(ws, 0, 0);
+	print_ssp2(e, ws, 0, 0);
 }

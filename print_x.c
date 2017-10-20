@@ -33,16 +33,16 @@ static char	*ft_lowcase(t_env *e, void *data, int base)
 static void	ft_min(t_env *e, char *s, int i)
 {
 	if (e->hash == 1)
-		e->type == 'x' ? ft_putstr("0x") : ft_putstr("0X");
+		e->type == 'x' ? /*ft_putstr("0x")*/ft_print_color(e, "0x") : /*ft_putstr("0X")*/ft_print_color(e, "0X");
 	if (e->precision > ft_strlen(s))
 	{
-		ft_write_pres(e->precision - ft_strlen(s));
+		ft_write_pres(e, e->precision - ft_strlen(s));
 		if (e->width <= e->precision)
 			g_len += e->precision - ft_strlen(s);
 	}
-	ft_putstr(s);
+	/*ft_putstr(s);*/ft_print_color(e, s);
 	if (e->width > 0)
-		ft_write_char(i, ' ');
+		ft_write_char(e, i, ' ');
 }
 
 void		ft_set_print(t_env *e, char *s, int i, char c)
@@ -54,20 +54,20 @@ void		ft_set_print(t_env *e, char *s, int i, char c)
 		if (e->zero)
 		{
 			if (e->hash == 1 && ft_strcmp(s, "0") != 0)
-				e->type == 'x' ? ft_putstr("0x") : ft_putstr("0X");
+				e->type == 'x' ? /*ft_putstr("0x")*/ft_print_color(e, "0x") : /*ft_putstr("0X")*/ft_print_color(e, "0X");
 			if (e->width > 0)
-				ft_write_char(i, c);
+				ft_write_char(e, i, c);
 		}
 		if (!e->zero)
 		{
 			if (e->width > 0)
-				ft_write_char(i, c);
+				ft_write_char(e, i, c);
 			if (e->hash == 1 && ft_strcmp(s, "0") != 0)
-				e->type == 'x' ? ft_putstr("0x") : ft_putstr("0X");
+				e->type == 'x' ? /*ft_putstr("0x")*/ft_print_color(e, "0x") : /*ft_putstr("0X")*/ft_print_color(e, "0X");
 		}
 		if (e->precision > ft_strlen(s))
 		{
-			ft_write_pres(e->precision - ft_strlen(s));
+			ft_write_pres(e, e->precision - ft_strlen(s));
 			if (e->width <= e->precision)
 				g_len += e->precision - ft_strlen(s);
 		}
@@ -92,7 +92,7 @@ static void	ft_print_xp2(t_env *e, char *s, int r, char c)
 	}
 	ft_set_print(e, s, i, c);
 	if (!e->min)
-		ft_putstr(s);
+		/*ft_putstr(s);*/ft_print_color(e, s);
 }
 
 void		print_x(t_env *e, void *data, int r)
@@ -105,7 +105,7 @@ void		print_x(t_env *e, void *data, int r)
 	if (e->precision == -1 && ft_strcmp(s, "0") == 0)
 	{
 		if (e->width > 0)
-			ft_write_char(e->width, ' ');
+			ft_write_char(e, e->width, ' ');
 		g_len += e->width;
 		return ;
 	}

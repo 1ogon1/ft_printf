@@ -26,13 +26,13 @@ static void	ft_print_percentp2(t_env *e, int i, char c, char h)
 	if (e->precision == 0)
 	{
 		if (e->width > 0)
-			ft_write_char(i, h);
+			ft_write_char(e, i, h);
 		ft_putchar(e->q);
 	}
 	if (e->precision > 0)
 	{
 		if (e->width > 0)
-			ft_write_char(i, h);
+			ft_write_char(e, i, h);
 	}
 	if (e->precision > 1)
 	{
@@ -55,7 +55,7 @@ static void	ft_print_percent(t_env *e, int i, char c, char h)
 				g_len += e->precision - 1;
 		}
 		if (e->width > 0)
-			ft_write_char(i, ' ');
+			ft_write_char(e, i, ' ');
 	}
 	else
 		ft_print_percentp2(e, i, c, h);

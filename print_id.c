@@ -63,24 +63,24 @@ void	ft_precision(t_env *e, char *s, int i, char c)
 	{
 		if (e->zero == 1)
 		{
-			ft_putchar(e->q);
+			/*ft_putchar(e->q);*/ft_print_color_c(e, e->q);
 			if (e->width > 0)
-				ft_write_char(i, c);
+				ft_write_char(e, i, c);
 			g_len++;
 		}
 		else
 		{
 			if (e->width > 0)
-				ft_write_char(i, c);
+				ft_write_char(e, i, c);
 			g_len++;
-			ft_putchar(e->q);
+			/*ft_putchar(e->q);*/ft_print_color_c(e, e->q);
 		}
 	}
 	else
 	{
 		if (e->width > 0)
-			ft_write_char(i, c);
-		ft_putchar(e->q);
+			ft_write_char(e, i, c);
+		/*ft_putchar(e->q);*/ft_print_color_c(e, e->q);
 	}
 }
 
@@ -95,13 +95,13 @@ void	ft_set(t_env *e, char *s, int i, char c)
 		}
 		if (e->precision > ft_strlen(s))
 		{
-			ft_write_pres(e->precision - ft_strlen(s));
+			ft_write_pres(e, e->precision - ft_strlen(s));
 			if (e->width <= e->precision)
 				g_len += e->precision - ft_strlen(s);
 		}
-		ft_putstr(s);
+		/*ft_putstr(s);*/ft_print_color(e, s);
 		if (e->width > 0)
-			ft_write_char(i, ' ');
+			ft_write_char(e, i, ' ');
 	}
 	else
 		ft_setp2(e, s, i, c);
@@ -118,7 +118,7 @@ void	print_id(t_env *e, void *data, int r)
 	if (e->precision == -1 && ft_strcmp(s, "0") == 0)
 	{
 		if (e->width > 0)
-			ft_write_char(e->width, ' ');
+			ft_write_char(e, e->width, ' ');
 		g_len += e->width;
 		return ;
 	}

@@ -12,9 +12,17 @@
 
 #include "ft_printf.h"
 
+static void	ft_print_type_c(char s)
+{
+	if (!s)
+		write(1, "\0", 1);
+	else
+		ft_putchar(s);
+}
+
 static void	ft_width_zero(char s)
 {
-	ft_putchar(s);
+	ft_print_type_c(s);
 	g_len++;
 }
 
@@ -26,14 +34,14 @@ static void	ft_print_c(t_env *e, char s, char c)
 	{
 		if (e->min)
 		{
-			ft_putchar(s);
-			ft_write_char(e->width - 1, c);
+			ft_print_type_c(s);
+			ft_write_char(e, e->width - 1, c);
 			g_len += e->width;
 		}
 		else
 		{
-			ft_write_char(e->width - 1, c);
-			ft_putchar(s);
+			ft_write_char(e, e->width - 1, c);
+			ft_print_type_c(s);
 			g_len += e->width;
 		}
 	}

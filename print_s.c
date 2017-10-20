@@ -18,20 +18,20 @@ static void	ft_print_2(t_env *e, char *s, char c)
 	{
 		if (e->width > ft_strlen(s))
 		{
-			ft_putstr(s);
-			ft_write_char(e->width - ft_strlen(s), c);
+			/*ft_putstr(s);*/ft_print_color(e, s);
+			ft_write_char(e, e->width - ft_strlen(s), c);
 			g_len += ft_strlen(s) + (e->width - ft_strlen(s));
 		}
 		else
 		{
 			if (e->precision > ft_strlen(s))
 			{
-				ft_putstr(s);
+				/*ft_putstr(s);*/ft_print_color(e, s);
 				g_len += ft_strlen(s);
 			}
 			else if (e->precision < ft_strlen(s))
 			{
-				ft_write(s, e->precision);
+				ft_write(e, s, e->precision);
 				g_len += e->precision;
 			}
 		}
@@ -56,15 +56,15 @@ void		ft_print(t_env *e, char c, char *s)
 		{
 			if (e->precision > ft_strlen(s))
 			{
-				ft_putstr(s);
-				ft_write_char(e->precision - ft_strlen(s), c);
-				ft_write_char(e->width - e->precision, ' ');
+				/*ft_putstr(s);*/ft_print_color(e, s);
+				ft_write_char(e, e->precision - ft_strlen(s), c);
+				ft_write_char(e, e->width - e->precision, ' ');
 				ft_radi_normi_v2(e, s);
 			}
 			else if (e->precision < ft_strlen(s))
 			{
-				ft_write(s, e->precision);
-				ft_write_char(e->width - e->precision, ' ');
+				ft_write(e, s, e->precision);
+				ft_write_char(e, e->width - e->precision, ' ');
 				g_len += e->precision + (e->width - e->precision);
 			}
 		}
@@ -82,7 +82,7 @@ void		print_s(t_env *e, void *data)
 
 	if (ft_strcmp(e->mod, "l") == 0)
 	{
-		print_ss(data);
+		print_ss(e, data);
 		return ;
 	}
 	if (e->min)
@@ -92,7 +92,7 @@ void		print_s(t_env *e, void *data)
 	if (e->precision == -1)
 	{
 		if (e->width > 0)
-			ft_write_char(e->width, c);
+			ft_write_char(e, e->width, c);
 		g_len += e->width;
 		return ;
 	}

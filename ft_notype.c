@@ -17,7 +17,7 @@ void	ft_notype(t_env *e, char **format)
 	if (e->min)
 	{
 		ft_putchar(**format);
-		ft_write_char(e->width - 1, ' ');
+		ft_write_char(e, e->width - 1, ' ');
 		if (e->width > 0)
 			g_len += e->width;
 		else if (**format)
@@ -25,7 +25,7 @@ void	ft_notype(t_env *e, char **format)
 	}
 	else
 	{
-		ft_write_char(e->width - 1, ' ');
+		ft_write_char(e, e->width - 1, ' ');
 		ft_putchar(**format);
 		if (e->width > 0)
 			g_len += e->width;
