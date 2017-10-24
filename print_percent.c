@@ -27,7 +27,7 @@ static void	ft_print_percentp2(t_env *e, int i, char c, char h)
 	{
 		if (e->width > 0)
 			ft_write_char(e, i, h);
-		ft_putchar(e->q);
+		/*ft_putchar(e->q);*/ft_print_color_c(e, e->q);
 	}
 	if (e->precision > 0)
 	{
@@ -40,14 +40,14 @@ static void	ft_print_percentp2(t_env *e, int i, char c, char h)
 		if (e->width <= e->precision)
 			g_len += e->precision - 1;
 	}
-	ft_putchar(c);
+	/*ft_putchar(c);*/ft_print_color_c(e, c);
 }
 
 static void	ft_print_percent(t_env *e, int i, char c, char h)
 {
 	if (e->min)
 	{
-		ft_putchar(c);
+		/*ft_putchar(c);*/ft_print_color_c(e, c);
 		if (e->precision > 1)
 		{
 			ft_write_pres_percent(e->precision - 1);
@@ -72,8 +72,9 @@ void		print_percent(t_env *e, char c)
 	if (e->precision > 0)
 		e->zero = 0;
 	g_len++;
-	if (e->precision > 1)
-		r = e->precision - 1;
+	e->precision = 0;
+//	if (e->precision > 1)
+//		r = e->precision - 1;
 	if (e->width > (1 + r))
 	{
 		i = e->width - (1 + r);

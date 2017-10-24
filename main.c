@@ -35,7 +35,70 @@ int main(void)
 	char	chr;
 	int		max = 1000;
 	int a, aa;
+	double f_loat;
+	float f_loat_min;
+	int e;
+	int ee;
 
+	e = 0;
+	ee = 0;
+	printf("hello%n\n", &e);
+	printf("%d\n", e);
+	ft_printf("Hello%f\n", &ee);
+	ft_printf("%d\n", ee);
+
+	f_loat = 123.321;
+//	f_loat_min = -123.321;
+/*	ft_printf("%f\n", 123.827);
+	printf("%f\n\n", 123.827);
+	ft_printf("%f\n", 123.494443);
+	printf("%f\n\n", 123.494443);
+	ft_printf("%f\n", 123.494445);
+	printf("%f\n\n", 123.494445);
+	ft_printf("%f\n", 123.494447);
+	printf("%f\n\n", 123.494447);
+	ft_printf("%f\n", 123.494449);
+	printf("%f\n\n", 123.494449);
+
+	ft_printf("%f\n", f_loat);
+	printf("%f\n\n", f_loat);
+
+	ft_printf("%f\n", 123.999);
+	printf("%f\n\n", 123.999);
+	ft_printf("%f\n", 123.993);
+	printf("%f\n\n", 123.993);
+
+	ft_printf("%f\n", 123.494444);
+	printf("%f\n\n", 123.494444);
+
+	ft_printf("%15.8f\n", 123.565);
+	printf("%15.8f\n\n", 123.565);
+
+	ft_printf("%f\n", 123.494);
+	printf("%f\n\n", 123.494);
+
+	ft_printf("%f\n", 123.823);
+	printf("%f\n\n", 123.823);
+/*
+	ft_printf("|{% +d}|\n", 42);
+	printf("|{% +d}|\n", 42);
+	ft_printf("{%}\n");
+	printf("{%}\n\n");
+
+	ft_printf("{%s}\n", 0);
+	printf("{%s}\n\n", 0);
+
+	ft_printf("my1=|%4.3%|\n");
+	printf("or1=|%4.3%|\n\n");
+
+	ft_printf("my2=|%4%|\n");
+	printf("or2=|%4%|\n\n");
+
+	ft_printf("my3=|%.3%|\n");
+	printf("or3=|%.3%|\n\n");
+
+	ft_printf("my4=|%4.7%|\n");
+	printf("or4=|%4.7%|\n\n");
 
 //	ft_printf("{red}%d{eoc} {green}%d{eoc} {blue}%d{eoc}\n", 123, 123, 123);
 //	printf("%d\n", 123);
@@ -275,7 +338,7 @@ int main(void)
 	printf("or12=%.3 -D\n", -10);
 	ft_printf("{red}my13=%.3 -D{eoc}\n", 0);
 	printf("or13=%.3 -D\n", 0);
-*/
+
 
 
 	printf("---------------------------------------------------------------------------\n");
@@ -415,7 +478,7 @@ int main(void)
 	printf("or12=%.3 -o\n", 10);
 	ft_printf("{red}my13=%5#o{eoc}\n", 15);
 	printf("or13=%5#o\n", 15);
-*/
+
 	printf(ANSI_COLOR_MAGENTA "---Conversion = O---" ANSI_COLOR_RESET "\n");
 	ft_printf("{red}my1=%06.4O{eoc}\n", 10);
 	printf("or1=%06.4O\n", 10);
@@ -427,7 +490,7 @@ int main(void)
 	printf("or4=%2O\n", 10);
 	ft_printf("{red}my5=%5#O{eoc}\n", 0);
 	printf("or5=%5#O\n", 0);
-	ft_printf("{red}my6=%0#-6.4O{eoc}\n", 1023);
+/*	ft_printf("{red}my6=%0#-6.4O{eoc}\n", 1023);
 	printf("or6=%0#-6.4O\n", 1023);
 	ft_printf("{red}my7=%O{eoc}\n", 10);
 	printf("or7=%O\n", 10);
@@ -447,50 +510,50 @@ int main(void)
 	printf("---------------------------------------------------------------------------\n");
 	printf(ANSI_COLOR_GREEN "Pointer address" ANSI_COLOR_RESET "\n");
 	printf(ANSI_COLOR_MAGENTA "---Conversion = p---" ANSI_COLOR_RESET "\n");
-	ft_printf("my1=%06.4p\n", 10);
+	ft_printf("{red}my1=%06.4p{eoc}\n", 10);
 	printf("or1=%06.4p\n", 10);
-	ft_printf("my2=%6.4p\n", 45);
+	ft_printf("{red}my2=%6.4p{eoc}\n", 45);
 	printf("or2=%6.4p\n", 45);
-	ft_printf("my3=%.4p\n", 5410);
+	ft_printf("{red}my3=%.4p{eoc}\n", 5410);
 	printf("or3=%.4p\n", 5410);
-	ft_printf("my4=%2p\n", 10);
+	ft_printf("{red}my4=%2p{eoc}\n", 10);
 	printf("or4=%2p\n", 10);
-	ft_printf("my5=%5p\n", 0);
+	ft_printf("{red}my5=%5p{eoc}\n", 0);
 	printf("or5=%5p\n", 0);
-	ft_printf("my6=%0-6.4p\n", 1023);
+	ft_printf("{red}my6=%0-6.4p{eoc}\n", 1023);
 	printf("or6=%0-6.4p\n", 1023);
-	ft_printf("my7=%p\n", 10);
+	ft_printf("{red}my7=%p{eoc}\n", 10);
 	printf("or7=%p\n", 10);
-	ft_printf("my8=% p\n", 10);
+	ft_printf("{red}my8=% p{eoc}\n", 10);
 	printf("or8=% p\n", 10);
-	ft_printf("my9=%020 p\n", 4310);
+	ft_printf("{red}my9=%020 p{eoc}\n", 4310);
 	printf("or9=%020 p\n", 4310);
-	ft_printf("my10=%020- p\n", 10);
+	ft_printf("{red}my10=%020- p{eoc}\n", 10);
 	printf("or10=%020 -p\n", 10);
-	ft_printf("my11=%20.7 -p\n", 3000);
+	ft_printf("{red}my11=%20.7 -p{eoc}\n", 3000);
 	printf("or11=%20.7 -p\n", 3000);
-	ft_printf("my12=%.3 -p\n", 10);
+	ft_printf("{red}my12=%.3 -p{eoc}\n", 10);
 	printf("or12=%.3 -p\n", 10);
-	ft_printf("my13=%.3 -p\n", str);
+	ft_printf("{red}my13=%.3 -p{eoc}\n", str);
 	printf("or13=%.3 -p\n", str);
-	ft_printf("my13=%.3 -p\n", &max);
+	ft_printf("{red}my13=%.3 -p{eoc}\n", &max);
 	printf("or13=%.3 -p\n", &max);
-	ft_printf("my14=%2.20- p\n", NULL);
+	ft_printf("{red}my14=%2.20- p{eoc}\n", NULL);
 	printf("or14=%2.20 -p\n", NULL);
-	ft_printf("my15=%4.0 -p\n", NULL);
+	ft_printf("{red}my15=%4.0 -p{eoc}\n", NULL);
 	printf("or15=%4.0 -p\n", NULL);
 
-
+/*
 	printf("---------------------------------------------------------------------------\n");
 	printf(ANSI_COLOR_GREEN "CHAR OUTPUT" ANSI_COLOR_RESET "\n");
 	printf(ANSI_COLOR_MAGENTA "---Conversion = c---" ANSI_COLOR_RESET "\n");
-	ft_printf("my1=|%06.4c|\n", 'a');
+	ft_printf("{red}my1=|%06.4c|{eoc}\n", 'a');
 	printf("or1=|%06.4c|\n", 'a');
-	ft_printf("my2=|%6.4c|\n", 'c');
+	ft_printf("{green}my2=|%6.4c|{eoc}\n", 'c');
 	printf("or2=|%6.4c|\n", 'c');
-	ft_printf("my3=|%.4c|\n", '0');
+	ft_printf("{blue}my3=|%.4c|{eoc}\n", '0');
 	printf("or3=|%.4c|\n", '0');
-	ft_printf("my4=|%2c|\n", 0);
+	ft_printf("{red}my4=|%2c|{eoc}\n", 0);
 	printf("or4=|%2c|\n", 0);
 	printf("|  %i", ft_printf("my5=%5c", 201));
 	printf("\n");
@@ -524,11 +587,11 @@ int main(void)
 	printf("---------------------------------------------------------------------------\n");
 	printf(ANSI_COLOR_GREEN "Пропускает или нет " ANSI_COLOR_RESET "\n");
 	printf(ANSI_COLOR_MAGENTA "---Conversion = %---" ANSI_COLOR_RESET "\n");
-	ft_printf("my1=%%%06.4c\n", 'a');
+	ft_printf("{red}my1=%%%06.4c{eoc}\n", 'a');
 	printf("or1=%%%06.4c\n", 'a');
-	ft_printf("my2%%=% 6.4c\n", 'a');
+	ft_printf("{blue}my2%%=% 6.4c{eoc}\n", 'a');
 	printf("or2%%=%6.4c\n", 'a');
-
+/*
 //	printf("or2=%t\n", 'a');
 //	printf("test%=% %%li\n", 130);
 //	printf("testZ=% %Zli\n", 130);
@@ -542,7 +605,7 @@ int main(void)
 	ft_printf("test_my=% 020kkak\n", 130);
 	printf("test_or=% 020kkak\n", 130);
 
-
+/*
 	printf("---------------------------------------------------------------------------\n");
 	printf(ANSI_COLOR_GREEN "ПРОВЕРКА ИЗ МЭЙКФАЙЛА" ANSI_COLOR_RESET "\n");
 	ft_printf("my%%012=%012d\n", 34567);

@@ -91,6 +91,12 @@ CMakeFiles/untitled.dir/libft/ft_bzero.c.o
 CMakeFiles/untitled.dir/libft/ft_memalloc.c.o
  /nfs/2016/r/rkonoval/project/ft_printf/libft/ft_memalloc.c
  /nfs/2016/r/rkonoval/project/ft_printf/libft/libft.h
+CMakeFiles/untitled.dir/libft/ft_numberlen.c.o
+ /nfs/2016/r/rkonoval/project/ft_printf/libft/ft_numberlen.c
+ /nfs/2016/r/rkonoval/project/ft_printf/libft/libft.h
+CMakeFiles/untitled.dir/libft/ft_pow.c.o
+ /nfs/2016/r/rkonoval/project/ft_printf/libft/ft_pow.c
+ /nfs/2016/r/rkonoval/project/ft_printf/libft/libft.h
 CMakeFiles/untitled.dir/libft/ft_putchar.c.o
  /nfs/2016/r/rkonoval/project/ft_printf/libft/ft_putchar.c
  /nfs/2016/r/rkonoval/project/ft_printf/libft/libft.h
@@ -123,6 +129,11 @@ CMakeFiles/untitled.dir/print_c.c.o
  /nfs/2016/r/rkonoval/project/ft_printf/ft_printf.h
  /nfs/2016/r/rkonoval/project/ft_printf/libft/libft.h
  /nfs/2016/r/rkonoval/project/ft_printf/print_c.c
+CMakeFiles/untitled.dir/print_f.c.o
+ /nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa.h
+ /nfs/2016/r/rkonoval/project/ft_printf/ft_printf.h
+ /nfs/2016/r/rkonoval/project/ft_printf/libft/libft.h
+ /nfs/2016/r/rkonoval/project/ft_printf/print_f.c
 CMakeFiles/untitled.dir/print_id.c.o
  /nfs/2016/r/rkonoval/project/ft_printf/ft_itoa/ft_itoa.h
  /nfs/2016/r/rkonoval/project/ft_printf/ft_printf.h

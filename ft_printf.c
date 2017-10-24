@@ -12,7 +12,12 @@
 
 #include "ft_printf.h"
 
-static void	print(t_env *e, void *data, char **format)
+//float		get_data(va_list ap)
+//{
+//	return (float)va_arg(ap, double);;
+//}
+
+static void	print(t_env *e, void *data, char **format, va_list *ap)
 {
 	if (e->type)
 	{
@@ -34,6 +39,8 @@ static void	print(t_env *e, void *data, char **format)
 			print_x(e, data, 0);
 		else if (e->type == '%')
 			print_percent(e, '%');
+		else if (e->type == 'f' || e->type == 'F' || e->type == 'n') //якщо тип %n, те що тобі треба     <-----------------------
+			print_f(e, data, "", ap, 0);// файл називається так само <-------
 	}
 	else
 		ft_notype(e, format);
@@ -55,10 +62,10 @@ int			ft_printf(char *format, ...)
 			format++;
 			if (*format)
 			{
-				ft_check(&format, &e);
+				ft_check(&format, &e); // тут я перевіряю пормат ширину і т.д.
 				if (e.type != '%' && e.type)
 					data = va_arg(ap, void *);
-				print(&e, data, &format);
+				print(&e, data, &format, &ap); //ця функція в цьому файлі оно зверху :) <----------------------
 			}
 		}
 		else

@@ -40,8 +40,12 @@ static void	ft_sec_check(t_env *e, char **format)
 		e->type = 'D';
 	else if (**format == 'i')
 		e->type = 'i';
+	else if (**format == 'f')
+		e->type = 'f';
 	else if (**format == '%')
 		e->type = '%';
+	else if (**format == 'n')
+		e->type = 'n';
 }
 
 static void	ft_check_type(t_env *e, char **format)

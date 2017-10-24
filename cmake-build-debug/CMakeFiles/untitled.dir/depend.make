@@ -91,6 +91,12 @@ CMakeFiles/untitled.dir/libft/ft_bzero.c.o: ../libft/libft.h
 CMakeFiles/untitled.dir/libft/ft_memalloc.c.o: ../libft/ft_memalloc.c
 CMakeFiles/untitled.dir/libft/ft_memalloc.c.o: ../libft/libft.h
 
+CMakeFiles/untitled.dir/libft/ft_numberlen.c.o: ../libft/ft_numberlen.c
+CMakeFiles/untitled.dir/libft/ft_numberlen.c.o: ../libft/libft.h
+
+CMakeFiles/untitled.dir/libft/ft_pow.c.o: ../libft/ft_pow.c
+CMakeFiles/untitled.dir/libft/ft_pow.c.o: ../libft/libft.h
+
 CMakeFiles/untitled.dir/libft/ft_putchar.c.o: ../libft/ft_putchar.c
 CMakeFiles/untitled.dir/libft/ft_putchar.c.o: ../libft/libft.h
 
@@ -122,6 +128,11 @@ CMakeFiles/untitled.dir/print_c.c.o: ../ft_itoa/ft_itoa.h
 CMakeFiles/untitled.dir/print_c.c.o: ../ft_printf.h
 CMakeFiles/untitled.dir/print_c.c.o: ../libft/libft.h
 CMakeFiles/untitled.dir/print_c.c.o: ../print_c.c
+
+CMakeFiles/untitled.dir/print_f.c.o: ../ft_itoa/ft_itoa.h
+CMakeFiles/untitled.dir/print_f.c.o: ../ft_printf.h
+CMakeFiles/untitled.dir/print_f.c.o: ../libft/libft.h
+CMakeFiles/untitled.dir/print_f.c.o: ../print_f.c
 
 CMakeFiles/untitled.dir/print_id.c.o: ../ft_itoa/ft_itoa.h
 CMakeFiles/untitled.dir/print_id.c.o: ../ft_printf.h

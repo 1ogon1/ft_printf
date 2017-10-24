@@ -109,6 +109,10 @@ stdlib.h
 -
 wchar.h
 -
+stdlib.h
+-
+math.h
+-
 
 /nfs/2016/r/rkonoval/project/ft_printf/ft_write_char.c
 ft_printf.h
@@ -129,6 +133,14 @@ libft.h
 /nfs/2016/r/rkonoval/project/ft_printf/libft/libft.h
 stdlib.h
 -
+
+/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_numberlen.c
+libft.h
+/nfs/2016/r/rkonoval/project/ft_printf/libft/libft.h
+
+/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_pow.c
+libft.h
+/nfs/2016/r/rkonoval/project/ft_printf/libft/libft.h
 
 /nfs/2016/r/rkonoval/project/ft_printf/libft/ft_putchar.c
 libft.h
@@ -179,6 +191,10 @@ ft_printf.h
 /nfs/2016/r/rkonoval/project/ft_printf/ft_printf.h
 
 /nfs/2016/r/rkonoval/project/ft_printf/print_c.c
+ft_printf.h
+/nfs/2016/r/rkonoval/project/ft_printf/ft_printf.h
+
+/nfs/2016/r/rkonoval/project/ft_printf/print_f.c
 ft_printf.h
 /nfs/2016/r/rkonoval/project/ft_printf/ft_printf.h
 

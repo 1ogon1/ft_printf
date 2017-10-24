@@ -1209,6 +1209,78 @@ CMakeFiles/untitled.dir/ft_check_color.c.o.provides: CMakeFiles/untitled.dir/ft_
 CMakeFiles/untitled.dir/ft_check_color.c.o.provides.build: CMakeFiles/untitled.dir/ft_check_color.c.o
 
 
+CMakeFiles/untitled.dir/print_f.c.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/print_f.c.o: ../print_f.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/untitled.dir/print_f.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled.dir/print_f.c.o   -c /nfs/2016/r/rkonoval/project/ft_printf/print_f.c
+
+CMakeFiles/untitled.dir/print_f.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled.dir/print_f.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/r/rkonoval/project/ft_printf/print_f.c > CMakeFiles/untitled.dir/print_f.c.i
+
+CMakeFiles/untitled.dir/print_f.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled.dir/print_f.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/r/rkonoval/project/ft_printf/print_f.c -o CMakeFiles/untitled.dir/print_f.c.s
+
+CMakeFiles/untitled.dir/print_f.c.o.requires:
+
+.PHONY : CMakeFiles/untitled.dir/print_f.c.o.requires
+
+CMakeFiles/untitled.dir/print_f.c.o.provides: CMakeFiles/untitled.dir/print_f.c.o.requires
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/print_f.c.o.provides.build
+.PHONY : CMakeFiles/untitled.dir/print_f.c.o.provides
+
+CMakeFiles/untitled.dir/print_f.c.o.provides.build: CMakeFiles/untitled.dir/print_f.c.o
+
+
+CMakeFiles/untitled.dir/libft/ft_numberlen.c.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/libft/ft_numberlen.c.o: ../libft/ft_numberlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/untitled.dir/libft/ft_numberlen.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled.dir/libft/ft_numberlen.c.o   -c /nfs/2016/r/rkonoval/project/ft_printf/libft/ft_numberlen.c
+
+CMakeFiles/untitled.dir/libft/ft_numberlen.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled.dir/libft/ft_numberlen.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/r/rkonoval/project/ft_printf/libft/ft_numberlen.c > CMakeFiles/untitled.dir/libft/ft_numberlen.c.i
+
+CMakeFiles/untitled.dir/libft/ft_numberlen.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled.dir/libft/ft_numberlen.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/r/rkonoval/project/ft_printf/libft/ft_numberlen.c -o CMakeFiles/untitled.dir/libft/ft_numberlen.c.s
+
+CMakeFiles/untitled.dir/libft/ft_numberlen.c.o.requires:
+
+.PHONY : CMakeFiles/untitled.dir/libft/ft_numberlen.c.o.requires
+
+CMakeFiles/untitled.dir/libft/ft_numberlen.c.o.provides: CMakeFiles/untitled.dir/libft/ft_numberlen.c.o.requires
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/libft/ft_numberlen.c.o.provides.build
+.PHONY : CMakeFiles/untitled.dir/libft/ft_numberlen.c.o.provides
+
+CMakeFiles/untitled.dir/libft/ft_numberlen.c.o.provides.build: CMakeFiles/untitled.dir/libft/ft_numberlen.c.o
+
+
+CMakeFiles/untitled.dir/libft/ft_pow.c.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/libft/ft_pow.c.o: ../libft/ft_pow.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/untitled.dir/libft/ft_pow.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled.dir/libft/ft_pow.c.o   -c /nfs/2016/r/rkonoval/project/ft_printf/libft/ft_pow.c
+
+CMakeFiles/untitled.dir/libft/ft_pow.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled.dir/libft/ft_pow.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/r/rkonoval/project/ft_printf/libft/ft_pow.c > CMakeFiles/untitled.dir/libft/ft_pow.c.i
+
+CMakeFiles/untitled.dir/libft/ft_pow.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled.dir/libft/ft_pow.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/r/rkonoval/project/ft_printf/libft/ft_pow.c -o CMakeFiles/untitled.dir/libft/ft_pow.c.s
+
+CMakeFiles/untitled.dir/libft/ft_pow.c.o.requires:
+
+.PHONY : CMakeFiles/untitled.dir/libft/ft_pow.c.o.requires
+
+CMakeFiles/untitled.dir/libft/ft_pow.c.o.provides: CMakeFiles/untitled.dir/libft/ft_pow.c.o.requires
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/libft/ft_pow.c.o.provides.build
+.PHONY : CMakeFiles/untitled.dir/libft/ft_pow.c.o.provides
+
+CMakeFiles/untitled.dir/libft/ft_pow.c.o.provides.build: CMakeFiles/untitled.dir/libft/ft_pow.c.o
+
+
 # Object files for target untitled
 untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/main.c.o" \
@@ -1258,7 +1330,10 @@ untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/ft_itoa/ft_itoa_size_t.c.o" \
 "CMakeFiles/untitled.dir/ft_itoa/ft_itoa_size_t_low.c.o" \
 "CMakeFiles/untitled.dir/ft_itoa/ft_itoa_uintmax_t.c.o" \
-"CMakeFiles/untitled.dir/ft_check_color.c.o"
+"CMakeFiles/untitled.dir/ft_check_color.c.o" \
+"CMakeFiles/untitled.dir/print_f.c.o" \
+"CMakeFiles/untitled.dir/libft/ft_numberlen.c.o" \
+"CMakeFiles/untitled.dir/libft/ft_pow.c.o"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
@@ -1311,9 +1386,12 @@ untitled: CMakeFiles/untitled.dir/ft_itoa/ft_itoa_size_t.c.o
 untitled: CMakeFiles/untitled.dir/ft_itoa/ft_itoa_size_t_low.c.o
 untitled: CMakeFiles/untitled.dir/ft_itoa/ft_itoa_uintmax_t.c.o
 untitled: CMakeFiles/untitled.dir/ft_check_color.c.o
+untitled: CMakeFiles/untitled.dir/print_f.c.o
+untitled: CMakeFiles/untitled.dir/libft/ft_numberlen.c.o
+untitled: CMakeFiles/untitled.dir/libft/ft_pow.c.o
 untitled: CMakeFiles/untitled.dir/build.make
 untitled: CMakeFiles/untitled.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Linking C executable untitled"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/r/rkonoval/project/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Linking C executable untitled"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1369,6 +1447,9 @@ CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/ft_itoa/ft_itoa_size_t
 CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/ft_itoa/ft_itoa_size_t_low.c.o.requires
 CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/ft_itoa/ft_itoa_uintmax_t.c.o.requires
 CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/ft_check_color.c.o.requires
+CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/print_f.c.o.requires
+CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/libft/ft_numberlen.c.o.requires
+CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/libft/ft_pow.c.o.requires
 
 .PHONY : CMakeFiles/untitled.dir/requires
 

@@ -47,6 +47,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled.dir/ft_itoa/ft_itoa_size_t_low.c.o"
   "CMakeFiles/untitled.dir/ft_itoa/ft_itoa_uintmax_t.c.o"
   "CMakeFiles/untitled.dir/ft_check_color.c.o"
+  "CMakeFiles/untitled.dir/print_f.c.o"
+  "CMakeFiles/untitled.dir/libft/ft_numberlen.c.o"
+  "CMakeFiles/untitled.dir/libft/ft_pow.c.o"
   "untitled.pdb"
   "untitled"
 )

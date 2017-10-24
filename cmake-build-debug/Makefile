@@ -825,6 +825,60 @@ libft/ft_memalloc.c.s:
 	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/libft/ft_memalloc.c.s
 .PHONY : libft/ft_memalloc.c.s
 
+libft/ft_numberlen.o: libft/ft_numberlen.c.o
+
+.PHONY : libft/ft_numberlen.o
+
+# target to build an object file
+libft/ft_numberlen.c.o:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/libft/ft_numberlen.c.o
+.PHONY : libft/ft_numberlen.c.o
+
+libft/ft_numberlen.i: libft/ft_numberlen.c.i
+
+.PHONY : libft/ft_numberlen.i
+
+# target to preprocess a source file
+libft/ft_numberlen.c.i:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/libft/ft_numberlen.c.i
+.PHONY : libft/ft_numberlen.c.i
+
+libft/ft_numberlen.s: libft/ft_numberlen.c.s
+
+.PHONY : libft/ft_numberlen.s
+
+# target to generate assembly for a file
+libft/ft_numberlen.c.s:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/libft/ft_numberlen.c.s
+.PHONY : libft/ft_numberlen.c.s
+
+libft/ft_pow.o: libft/ft_pow.c.o
+
+.PHONY : libft/ft_pow.o
+
+# target to build an object file
+libft/ft_pow.c.o:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/libft/ft_pow.c.o
+.PHONY : libft/ft_pow.c.o
+
+libft/ft_pow.i: libft/ft_pow.c.i
+
+.PHONY : libft/ft_pow.i
+
+# target to preprocess a source file
+libft/ft_pow.c.i:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/libft/ft_pow.c.i
+.PHONY : libft/ft_pow.c.i
+
+libft/ft_pow.s: libft/ft_pow.c.s
+
+.PHONY : libft/ft_pow.s
+
+# target to generate assembly for a file
+libft/ft_pow.c.s:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/libft/ft_pow.c.s
+.PHONY : libft/ft_pow.c.s
+
 libft/ft_putchar.o: libft/ft_putchar.c.o
 
 .PHONY : libft/ft_putchar.o
@@ -1094,6 +1148,33 @@ print_c.s: print_c.c.s
 print_c.c.s:
 	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/print_c.c.s
 .PHONY : print_c.c.s
+
+print_f.o: print_f.c.o
+
+.PHONY : print_f.o
+
+# target to build an object file
+print_f.c.o:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/print_f.c.o
+.PHONY : print_f.c.o
+
+print_f.i: print_f.c.i
+
+.PHONY : print_f.i
+
+# target to preprocess a source file
+print_f.c.i:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/print_f.c.i
+.PHONY : print_f.c.i
+
+print_f.s: print_f.c.s
+
+.PHONY : print_f.s
+
+# target to generate assembly for a file
+print_f.c.s:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/print_f.c.s
+.PHONY : print_f.c.s
 
 print_id.o: print_id.c.o
 
@@ -1506,6 +1587,12 @@ help:
 	@echo "... libft/ft_memalloc.o"
 	@echo "... libft/ft_memalloc.i"
 	@echo "... libft/ft_memalloc.s"
+	@echo "... libft/ft_numberlen.o"
+	@echo "... libft/ft_numberlen.i"
+	@echo "... libft/ft_numberlen.s"
+	@echo "... libft/ft_pow.o"
+	@echo "... libft/ft_pow.i"
+	@echo "... libft/ft_pow.s"
 	@echo "... libft/ft_putchar.o"
 	@echo "... libft/ft_putchar.i"
 	@echo "... libft/ft_putchar.s"
@@ -1536,6 +1623,9 @@ help:
 	@echo "... print_c.o"
 	@echo "... print_c.i"
 	@echo "... print_c.s"
+	@echo "... print_f.o"
+	@echo "... print_f.i"
+	@echo "... print_f.s"
 	@echo "... print_id.o"
 	@echo "... print_id.i"
 	@echo "... print_id.s"

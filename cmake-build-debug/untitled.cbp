@@ -163,6 +163,12 @@
 		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_memalloc.c">
 			<Option target="untitled"/>
 		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_numberlen.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_pow.c">
+			<Option target="untitled"/>
+		</Unit>
 		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/libft/ft_putchar.c">
 			<Option target="untitled"/>
 		</Unit>
@@ -191,6 +197,9 @@
 			<Option target="untitled"/>
 		</Unit>
 		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_c.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_f.c">
 			<Option target="untitled"/>
 		</Unit>
 		<Unit filename="/nfs/2016/r/rkonoval/project/ft_printf/print_id.c">
