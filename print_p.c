@@ -16,7 +16,7 @@ static void	ft_null_p(t_env *e)
 {
 	if (e->min)
 	{
-		/*ft_putstr("0x");*/ft_print_color(e, "0x");
+		ft_print_color(e, "0x");
 		if (e->width > 0)
 			ft_write_char(e, e->width - 2, ' ');
 		if (e->width > 2)
@@ -28,7 +28,7 @@ static void	ft_null_p(t_env *e)
 			ft_write_char(e, e->width - 2, ' ');
 		if (e->width > 2)
 			g_len += e->width - 2;
-		/*ft_putstr("0x");*/ft_print_color(e, "0x");
+		ft_print_color(e, "0x");
 	}
 }
 
@@ -36,7 +36,7 @@ static void	ft_no_min_p(t_env *e, char *s, int i, char c)
 {
 	if (e->zero)
 	{
-		/*ft_putstr("0x");*/ft_print_color(e, "0x");
+		ft_print_color(e, "0x");
 		if (e->width > 0)
 			ft_write_char(e, i, c);
 	}
@@ -44,7 +44,7 @@ static void	ft_no_min_p(t_env *e, char *s, int i, char c)
 	{
 		if (e->width > 0)
 			ft_write_char(e, i, c);
-		/*ft_putstr("0x");*/ft_print_color(e, "0x");
+		ft_print_color(e, "0x");
 	}
 	if (e->precision > ft_strlen(s))
 	{
@@ -52,21 +52,21 @@ static void	ft_no_min_p(t_env *e, char *s, int i, char c)
 		if (e->width <= e->precision)
 			g_len += e->precision - ft_strlen(s);
 	}
-	/*ft_putstr(s);*/ft_print_color(e, s);
+	ft_print_color(e, s);
 }
 
 static void	ft_set_p(t_env *e, char *s, int i, char c)
 {
 	if (e->min)
 	{
-		/*ft_putstr("0x");*/ft_print_color(e, "0x");
+		ft_print_color(e, "0x");
 		if (e->precision > ft_strlen(s))
 		{
 			ft_write_pres(e, e->precision - ft_strlen(s));
 			if (e->width <= e->precision)
 				g_len += e->precision - ft_strlen(s);
 		}
-		/*ft_putstr(s);*/ft_print_color(e, s);
+		ft_print_color(e, s);
 		if (e->width > 0)
 			ft_write_char(e, i, c);
 	}

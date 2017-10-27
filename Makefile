@@ -18,6 +18,7 @@ SRC = print_x.c\
 	  print_p.c\
 	  print_u.c\
 	  print_s.c\
+	  print_n.c\
 	  print_id.c\
 	  print_ss.c\
 	  print_un.c\
@@ -27,6 +28,7 @@ SRC = print_x.c\
 	  print_mid.c\
 	  ft_printf.c\
 	  print_idp2.c\
+	  libft/ft_pow.c\
 	  print_percent.c\
 	  ft_write_char.c\
 	  libft/ft_atoi.c\
@@ -42,6 +44,7 @@ SRC = print_x.c\
 	  libft/ft_strjoin.c\
 	  libft/ft_putchar.c\
 	  libft/ft_memalloc.c\
+	  libft/ft_numberlen.c\
 	  ft_itoa/ft_itoa_long.c\
 	  ft_itoa/ft_itoa_base.c\
 	  ft_itoa/ft_itoa_short.c\

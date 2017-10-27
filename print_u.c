@@ -30,7 +30,7 @@ static void	ft_setp2_u(t_env *e, char *s, int i, char c)
 		if (e->width <= e->precision)
 			g_len += e->precision - ft_strlen(s);
 	}
-	/*ft_putstr(s);*/ft_print_color(e, s);
+	ft_print_color(e, s);
 }
 
 static void	ft_set_u(t_env *e, char *s, int i, char c)
@@ -43,7 +43,7 @@ static void	ft_set_u(t_env *e, char *s, int i, char c)
 			if (e->width <= e->precision)
 				g_len += e->precision - ft_strlen(s);
 		}
-		/*ft_putstr(s);*/ft_print_color(e, s);
+		ft_print_color(e, s);
 		if (e->width > 0)
 			ft_write_char(e, i, ' ');
 	}

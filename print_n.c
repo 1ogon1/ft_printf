@@ -1,24 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_check_color.c                                   :+:      :+:    :+:   */
+/*   print_n.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rkonoval <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/26 18:28:22 by rkonoval          #+#    #+#             */
-/*   Updated: 2017/10/26 18:28:26 by rkonoval         ###   ########.fr       */
+/*   Created: 2017/10/26 18:33:38 by rkonoval          #+#    #+#             */
+/*   Updated: 2017/10/26 18:33:40 by rkonoval         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-int		ft_numberlen(int nb)
+void	print_n(void *data)
 {
-	int i;
+	int	*res;
 
-	i = 0;
-	while (nb /= 10)
-		i++;
-	i++;
-	return (i);
+	res = (int*)data;
+	*res = g_len;
 }

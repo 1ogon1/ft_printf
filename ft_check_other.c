@@ -16,11 +16,13 @@ void		ft_check_pres(t_env *e, char **format)
 {
 	e->precision = 0;
 	(*format)++;
-	if (**format >= '1' && **format <= '9') {
+	if (**format >= '1' && **format <= '9')
+	{
 		e->precision = ft_atoi(*format);
 		while (**format >= '0' && **format <= '9')
 			(*format)++;
-	} else
+	}
+	else
 		e->precision = -1;
 }
 

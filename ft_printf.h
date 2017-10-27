@@ -18,9 +18,8 @@
 # include <stdlib.h>
 # include <wchar.h>
 # include <stdlib.h>
-
-
-# include<math.h>
+# define X "0x"
+# define XX "0X"
 
 int				g_len;
 
@@ -33,7 +32,7 @@ typedef struct	s_env
 	int			zero;
 	int			hash;
 	int			plus;
-	int 		color;
+	int			color;
 	int			width;
 	int			space;
 	int			priority;
@@ -60,14 +59,13 @@ void			print_p(t_env *e, void *data, int r);
 void			print_o(t_env *e, void *data, int r);
 void			print_u(t_env *e, void *data, int r);
 void			print_x(t_env *e, void *data, int r);
-void			print_f(t_env *e, void *data, char *str, va_list *ap, int size);
-//void			print_f(t_env *e, va_list ap, int r);
 void			ft_notype(t_env *e, char **format);
 void			print_percent(t_env *e, char c);
 void			print_ss(t_env *e, void *data);
 void			print_s(t_env *e, void *data);
 void			print_c(t_env *e, void *data);
 void			print_sp2(t_env *e, char *s);
+void			print_n(void *data);
 /*
 **				OUTPUT HELPS
 */
@@ -93,7 +91,4 @@ void			ft_write_pres(t_env *e, int i);
 */
 void			ft_print_color(t_env *e, char *str);
 void			ft_print_color_c(t_env *e, char c);
-
-
-float			get_data(va_list ap);
 #endif

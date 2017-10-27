@@ -18,9 +18,8 @@
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strlen(const char *str);
 int		ft_atoi(const char *str);
-int 	ft_pow(int nb, int step);
-int 	ft_numberlen(int nb);
-
+int		ft_pow(int nb, int step);
+int		ft_numberlen(int nb);
 
 char	*ft_strjoin(char const *s1, char const *s2);
 

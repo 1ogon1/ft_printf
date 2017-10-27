@@ -18,13 +18,13 @@ static void	ft_costil(t_env *e, char *s, int i, char c)
 	{
 		if (e->width > ft_strlen(s) + 1)
 			ft_write_char(e, i - 1, c);
-		/*ft_putchar('-');*/ft_print_color_c(e, '-');
+		ft_print_color_c(e, '-');
 	}
 	else if (e->precision <= ft_strlen(s))
 	{
 		if (e->width > ft_strlen(s) + 1)
 			ft_write_char(e, i, c);
-		/*ft_putchar('-');*/ft_print_color_c(e, '-');
+		ft_print_color_c(e, '-');
 	}
 }
 
@@ -34,7 +34,7 @@ static void	ft_precisionn(t_env *e, char *s, int i, char c)
 	{
 		if (e->zero == 1)
 		{
-			/*ft_putchar(e->q);*/ft_print_color_c(e, e->q);
+			ft_print_color_c(e, e->q);
 			if (e->width > 0)
 				ft_write_char(e, i, c);
 		}
@@ -42,14 +42,14 @@ static void	ft_precisionn(t_env *e, char *s, int i, char c)
 		{
 			if (e->width > 0)
 				ft_write_char(e, i, c);
-			/*ft_putchar(e->q);*/ft_print_color_c(e, e->q);
+			ft_print_color_c(e, e->q);
 		}
 	}
 	else
 	{
 		if (e->width > 0)
 			ft_write_char(e, i, c);
-		/*ft_putchar(e->q);*/ft_print_color_c(e, e->q);
+		ft_print_color_c(e, e->q);
 	}
 }
 
@@ -59,22 +59,17 @@ static void	ft_nomin(t_env *e, char *s, int i, char c)
 	{
 		if (e->zero)
 		{
-			/*ft_putchar('-');*/ft_print_color_c(e, '-');
+			ft_print_color_c(e, '-');
 			ft_precisionn(e, s, i, c);
 		}
 		if (!e->zero)
 		{
 			ft_precisionn(e, s, i, c);
-			/*ft_putchar('-');*/ft_print_color_c(e, '-');
+			ft_print_color_c(e, '-');
 		}
 	}
 	if (e->precision > 0)
-	{
-		ft_costil(e, s, i , c);
-//		if (e->width > ft_strlen(s) + 1)
-//			ft_write_char(i - 1, c);
-//		ft_putchar('-');
-	}
+		ft_costil(e, s, i, c);
 	if (e->precision > ft_strlen(s))
 	{
 		ft_write_pres(e, e->precision - (ft_strlen(s)));
@@ -89,20 +84,20 @@ void		ft_minset(t_env *e, char *s, int i, char c)
 		s++;
 	if (e->min)
 	{
-		/*ft_putchar('-');*/ft_print_color_c(e, '-');
+		ft_print_color_c(e, '-');
 		if (e->precision > ft_strlen(s))
 		{
 			ft_write_pres(e, e->precision - ft_strlen(s));
 			if (e->width <= e->precision)
 				g_len += e->precision - (ft_strlen(s) - 1);
 		}
-		/*ft_putstr(s);*/ft_print_color(e, s);
+		ft_print_color(e, s);
 		if (e->width > 0)
 			ft_write_char(e, i - 1, ' ');
 	}
 	else
 	{
 		ft_nomin(e, s, i, c);
-		/*ft_putstr(s);*/ft_print_color(e, s);
+		ft_print_color(e, s);
 	}
 }

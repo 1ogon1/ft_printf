@@ -18,7 +18,7 @@ void		ft_two(t_env *e, char *s, char c)
 	{
 		ft_write_char(e, e->width - e->precision, c);
 		ft_write_char(e, e->precision - ft_strlen(s), c);
-		/*ft_putstr(s);*/ft_print_color(e, s);
+		ft_print_color(e, s);
 		g_len += ft_strlen(s) + (e->precision - ft_strlen(s)) +
 				(e->width - e->precision);
 	}
@@ -35,14 +35,14 @@ void		ft_one(t_env *e, char *s, char c)
 	if (e->width > ft_strlen(s))
 	{
 		ft_write_char(e, e->width - ft_strlen(s), c);
-		/*ft_putstr(s);*/ft_print_color(e, s);
+		ft_print_color(e, s);
 		g_len += ft_strlen(s) + (e->width - ft_strlen(s));
 	}
 	else
 	{
 		if (e->precision > ft_strlen(s))
 		{
-			/*ft_putstr(s);*/ft_print_color(e, s);
+			ft_print_color(e, s);
 			g_len += ft_strlen(s);
 		}
 		else if (e->precision < ft_strlen(s))
@@ -73,19 +73,19 @@ void		ft_three(t_env *e, char *s, char c)
 		{
 			if (e->min)
 			{
-				/*ft_putstr(s);*/ft_print_color(e, s);
+				ft_print_color(e, s);
 				ft_write_char(e, e->width - ft_strlen(s), c);
 			}
 			else
 			{
 				ft_write_char(e, e->width - ft_strlen(s), c);
-				/*ft_putstr(s);*/ft_print_color(e, s);
+				ft_print_color(e, s);
 			}
 			g_len += e->width;
 		}
 		else
 		{
-			/*ft_putstr(s);*/ft_print_color(e, s);
+			ft_print_color(e, s);
 			g_len += ft_strlen(s);
 		}
 	}

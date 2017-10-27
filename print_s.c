@@ -18,7 +18,7 @@ static void	ft_print_2(t_env *e, char *s, char c)
 	{
 		if (e->width > ft_strlen(s))
 		{
-			/*ft_putstr(s);*/ft_print_color(e, s);
+			ft_print_color(e, s);
 			ft_write_char(e, e->width - ft_strlen(s), c);
 			g_len += ft_strlen(s) + (e->width - ft_strlen(s));
 		}
@@ -26,7 +26,7 @@ static void	ft_print_2(t_env *e, char *s, char c)
 		{
 			if (e->precision > ft_strlen(s))
 			{
-				/*ft_putstr(s);*/ft_print_color(e, s);
+				ft_print_color(e, s);
 				g_len += ft_strlen(s);
 			}
 			else if (e->precision < ft_strlen(s))
@@ -56,7 +56,7 @@ void		ft_print(t_env *e, char c, char *s)
 		{
 			if (e->precision > ft_strlen(s))
 			{
-				/*ft_putstr(s);*/ft_print_color(e, s);
+				ft_print_color(e, s);
 				ft_write_char(e, e->precision - ft_strlen(s), c);
 				ft_write_char(e, e->width - e->precision, ' ');
 				ft_radi_normi_v2(e, s);

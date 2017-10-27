@@ -49,7 +49,7 @@ char	*ft_mod(t_env *e, void *data, int base)
 		return (ft_itoa_base((char)data, base));
 	else if (ft_strcmp(e->mod, "j") == 0)
 		return (ft_itoa_intmax_t((intmax_t)data, base));
-	else if (ft_strcmp(e->mod, "z") == 0 && e->type == 'd')
+	else if (ft_strcmp(e->mod, "z") == 0 && (e->type == 'd' || e->type == 'i'))
 		return (ft_itoa_intmax_t((intmax_t)data, base));
 	else if (ft_strcmp(e->mod, "z") == 0 && e->type != 'd')
 		return (ft_itoa_size_t((size_t)data, base));
@@ -63,7 +63,7 @@ void	ft_precision(t_env *e, char *s, int i, char c)
 	{
 		if (e->zero == 1)
 		{
-			/*ft_putchar(e->q);*/ft_print_color_c(e, e->q);
+			ft_print_color_c(e, e->q);
 			if (e->width > 0)
 				ft_write_char(e, i, c);
 			g_len++;
@@ -73,14 +73,14 @@ void	ft_precision(t_env *e, char *s, int i, char c)
 			if (e->width > 0)
 				ft_write_char(e, i, c);
 			g_len++;
-			/*ft_putchar(e->q);*/ft_print_color_c(e, e->q);
+			ft_print_color_c(e, e->q);
 		}
 	}
 	else
 	{
 		if (e->width > 0)
 			ft_write_char(e, i, c);
-		/*ft_putchar(e->q);*/ft_print_color_c(e, e->q);
+		ft_print_color_c(e, e->q);
 	}
 }
 
@@ -99,7 +99,7 @@ void	ft_set(t_env *e, char *s, int i, char c)
 			if (e->width <= e->precision)
 				g_len += e->precision - ft_strlen(s);
 		}
-		/*ft_putstr(s);*/ft_print_color(e, s);
+		ft_print_color(e, s);
 		if (e->width > 0)
 			ft_write_char(e, i, ' ');
 	}

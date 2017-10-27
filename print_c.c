@@ -17,7 +17,7 @@ static void	ft_print_type_c(t_env *e, char s)
 	if (!s)
 		write(1, "\0", 1);
 	else
-		/*ft_putchar(s);*/ft_print_color_c(e, s);
+		ft_print_color_c(e, s);
 }
 
 static void	ft_width_zero(t_env *e, char s)

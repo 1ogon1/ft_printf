@@ -15,14 +15,14 @@
 static void	ft_min_o(t_env *e, char *s, int i)
 {
 	if (e->hash == 1 && ft_strcmp(s, "0") != 0)
-		/*ft_putstr("0");*/ft_print_color(e, "0");
+		ft_print_color(e, "0");
 	if (e->precision > ft_strlen(s))
 	{
 		ft_write_pres(e, e->precision - ft_strlen(s));
 		if (e->width <= e->precision)
 			g_len += e->precision - ft_strlen(s);
 	}
-	/*ft_putstr(s);*/ft_print_color(e, s);
+	ft_print_color(e, s);
 	if (e->width > 0)
 		ft_write_char(e, i, ' ');
 }
@@ -36,7 +36,7 @@ static void	ft_set_print_o(t_env *e, char *s, int i, char c)
 		if (e->zero)
 		{
 			if (e->hash == 1 && ft_strcmp(s, "0") != 0)
-				/*ft_putstr("0");*/ft_print_color(e, "0");
+				ft_print_color(e, "0");
 			if (e->width > 0)
 				ft_write_char(e, i, c);
 		}
@@ -45,7 +45,7 @@ static void	ft_set_print_o(t_env *e, char *s, int i, char c)
 			if (e->width > 0)
 				ft_write_char(e, i, c);
 			if (e->hash == 1 && ft_strcmp(s, "0") != 0)
-				/*ft_putstr("0");*/ft_print_color(e, "0");
+				ft_print_color(e, "0");
 		}
 		if (e->precision > ft_strlen(s))
 		{
@@ -82,7 +82,7 @@ static void	ft_print_op2(t_env *e, char *s, int r)
 	g_len += ft_strlen(s);
 	ft_set_print_o(e, s, i, c);
 	if (!e->min)
-		/*ft_putstr(s);*/ft_print_color(e, s);
+		ft_print_color(e, s);
 }
 
 void		print_o(t_env *e, void *data, int r)
@@ -101,7 +101,7 @@ void		print_o(t_env *e, void *data, int r)
 	{
 		if (e->hash)
 		{
-			/*ft_putstr("0");*/ft_print_color(e, "0");
+			ft_print_color(e, "0");
 			g_len++;
 		}
 		if (e->width > 0)

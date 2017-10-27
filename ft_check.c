@@ -23,7 +23,6 @@ static void	ft_null(t_env *e)
 	e->type = 0;
 	e->space = 0;
 	e->width = 0;
-	//e->color = 0;
 	e->priority = 0;
 	e->precision = 0;
 }

@@ -72,7 +72,7 @@ static void	print_ssp2(t_env *e, wint_t *ws, int i, int j)
 		i++;
 	}
 	s[j] = '\0';
-	/*ft_putstr(s);*/ft_print_color(e, s);
+	ft_print_color(e, s);
 	if (s)
 		free(s);
 }
@@ -84,7 +84,7 @@ void		print_ss(t_env *e, void *data)
 	ws = (wint_t *)data;
 	if (!ws)
 	{
-		/*ft_putstr("(null)");*/ft_print_color(e, "(null)");
+		ft_print_color(e, "(null)");
 		g_len += 6;
 		return ;
 	}

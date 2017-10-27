@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void	ft_print_color_c(t_env  *e, char c)
+void	ft_print_color_c(t_env *e, char c)
 {
 	if (e->color == 1)
 	{
@@ -70,7 +70,7 @@ void	ft_setp2(t_env *e, char *s, int i, char c)
 			ft_write_char(e, i, c);
 		if ((e->plus == 1 || e->space == 1) && s[0] != '-')
 		{
-			/*ft_putchar(e->q);*/ft_print_color_c(e, e->q);
+			ft_print_color_c(e, e->q);
 			g_len++;
 		}
 	}
@@ -80,7 +80,7 @@ void	ft_setp2(t_env *e, char *s, int i, char c)
 		if (e->width <= e->precision)
 			g_len += e->precision - ft_strlen(s);
 	}
-	/*ft_putstr(s);*/ft_print_color(e, s);
+	ft_print_color(e, s);
 }
 
 void	print_idp2(t_env *e, int r, char *s)
